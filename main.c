@@ -1,11 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void showLetterGrade(float);
+
+
 int main()
 {
-    int score;
+    float score;
     printf("Enter your score: ");
-    scanf("%d",&score);
+    scanf("%f",&score);
+
+    showLetterGrade(score);
+
+    return 0;
+}
+
+void showLetterGrade(float score)
+{
     if(score >= 90.0)
     {
         printf("A");
@@ -26,6 +37,4 @@ int main()
     {
         printf("F");
     }
-    //printf("Hello world!\n");
-    return 0;
 }
